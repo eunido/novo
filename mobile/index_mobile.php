@@ -15,22 +15,19 @@
         <link rel="stylesheet" href="./css/index_mobile_style.css">
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./dist/css/swiper.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="./js/jquery.touchSlider.js"></script>
-        <script src="./dist/js/swiper.min.js"></script>
-        <script src="//cdn.jsdelivr.net/jquery.event.drag/2.2/jquery.event.drag.min.js"></script>
         <script type="text/javascript" src="./js/jquery.litebox.js"></script>
+        <script src="./dist/js/swiper.min.js"></script>
         <script>
                 $(function() {
                         $('.litebox-trigger').LiteBox();
                 });
         </script>
         <style>
+            
+            
             .navi {display:none;position:relative;top:0;left:10px;}
             .ui-collapsible-heading-toggle {left:15px;}
             .ui-collapsible-content {margin-left:30px;}
@@ -38,14 +35,15 @@
             
             
             .swiper-container {
-                width: 300px;
-                height: 300px;
+                width: 100%;
+                height: 100%;
+                position:absolute;
             }
             
             .swiper-slide {
+                position:relative;
                 text-align: center;
                 font-size: 18px;
-                background: #fff;
 
                 /* Center slide text vertically */
                 display: -webkit-box;
@@ -61,6 +59,13 @@
                 -webkit-align-items: center;
                 align-items: center;
             }
+            
+            .swiper-slide img {
+                width:250px;
+                height:250px;
+            }
+            
+
         </style>
         <script>
             function fnMove(seq){
@@ -223,59 +228,86 @@
                                         <img src="../img/95/tobacco/desert.png" alt="desert">
                                   </div>
                                 </div>         
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>     
-                        </div> 
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination" style="bottom:20px;"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>     
+                            </div>    
+                        </div>
+                            
+                            
                         <script>
                             var bodyWidth=$('body').width();
                             var sortWidth=$('#sort1 img').width();
                             var sortLeft=bodyWidth/2-sortWidth/2;
-                            
+
                             $('#sort1 img').css({'position':'absolute','left':sortLeft});
-                        </script>                        
+                        </script>
+                        
                         
                         <div id="sort2">
                             <div class="sort_name"><span class="leftT"></span><div class="name">FRUIT 과일향</div><span class="rightT"></span></div>
-                            <span class="left"><</span>
-                            <div class="touchSlider2">      
-                                <ul style="float:left;display:block;">
-                                  <li class="litebox-trigger" data-template="#whitepunch">
-                                        <a href="#"><img src="../img/95/fruit/whitepunch.png" alt="whitepunch"></a>                                                     
-                                        <script type="text/template" id="whitepunch">
-                                            <img src='./img/product/fruit/whitepunch.jpg' alt='whitepunch'class="product">					
-                                        </script>   
-                                  </li>
-                                  <li class="litebox-trigger" data-template="#greenpunch">
-                                        <a href="#"><img src="../img/95/fruit/greenpunch.png" alt="greenpunch"></a>                                                                                  
-                                        <script type="text/template" id="greenpunch">
-                                            <img src='./img/product/fruit/greenpunch.jpg' alt='greenpunch'class="product">			
-                                        </script>        
-                                  </li>
-                                  <li class="litebox-trigger" data-template="#bluepunch">
-                                        <a href="#"><img src="../img/95/fruit/bluepunch.png" alt="bluepunch"></a>                                     
-                                        <script type="text/template" id="bluepunch">
-                                            <img src='./img/product/fruit/bluepunch.jpg' alt='bluepunch'class="product">				
-                                        </script>
-                                  </li>
-                                  <li class="litebox-trigger" data-template="#coollemon">
-                                        <a href="#"><img src="../img/95/fruit/coollemon.png" alt="coollemon"></a>                                              
-                                        <script type="text/template" id="coollemon">
-                                            <img src='./img/product/fruit/coollemon.jpg' alt='coollemon'class="product">							
-                                        </script>   
-                                  </li>
-                                  <li class="litebox-trigger" data-template="#yellowpunch">
-                                        <a href="#"><img src="../img/95/fruit/yellowpunch.png" alt="yellowpunch"></a>                                                  
-                                        <script type="text/template" id="yellowpunch">
-                                            <img src='./img/product/fruit/yellowpunch.jpg' alt='yellowpunch'class="product">				
-                                        </script>    
-                                  </li>
-                                </ul>                      
-                            </div>  
-                            <span class="right">></span>                   
-                        </div> 
+                            <div class="swiper-container">      
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/fruit/whitepunch.png" alt="whitepunch">       
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/fruit/greenpunch.png" alt="greenpunch">
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/fruit/bluepunch.png" alt="bluepunch">  
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/fruit/coollemon.png" alt="coollemon">
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/fruit/yellowpunch.png" alt="yellowpunch">
+                                  </div>
+                                </div>         
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination" style="bottom:20px;"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>     
+                            </div>    
+                            
+                        </div>
+                        
+                        
+                        <div id="sort3">
+                            <div class="sort_name"><span class="leftT"></span><div class="name">MENTHOL 멘솔향 & <br>DESSERT 디져트</div><span class="rightT"></span></div>
+                            <div class="swiper-container">      
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/menthol/blackmenthol.png" alt="blackmenthol">       
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/menthol/tabacmenthol.png" alt="tabacmenthol">
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/menthol/menthol.png" alt="menthol">  
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/dessert/americano.png" alt="americano">
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/dessert/hazzlenut.png" alt="hazzlenut">
+                                  </div>
+                                </div>         
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination" style="bottom:20px;"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>     
+                            </div>    
+                            
+                        </div>
+                        
+                        
+                        
+                        
                         <script>
                             var bodyWidth=$('body').width();
                             var sortWidth=$('#sort2 img').width();
@@ -284,31 +316,7 @@
                             $('#sort2 img').css({'position':'absolute','left':sortLeft});
                         </script>
 
-                        <div id="touchSlider_paging2" class="btn_area2" style="text-align:center;"></div>
-
-                        <script>
-
-                            $(".touchSlider2").touchSlider({
-                                    initComplete : function (e) {
-                                            $("#touchSlider_paging2").html("");
-                                            var num = 1;
-                                            $(".touchSlider2 ul li").each(function (i, el) {
-                                                    if((i+1) % e._view == 0) {
-                                                            $("#touchSlider_paging2").append('<div class="btn_page">page' + (num++) + '</div>');
-                                                    }
-                                            });
-                                            $("#touchSlider_paging2 .btn_page").bind("click", function (e) {
-                                                    var i = $(this).index();
-                                                    $(".touchSlider2").get(0).go_page(i);
-                                            });
-                                    },
-                                    counter : function (e) {
-                                            $("#touchSlider_paging2 .btn_page").removeClass("on").eq(e.current-1).addClass("on");
-                                    }
-                            });
-
-                        </script>         
-                        <div id="sort3">
+<!--                        <div id="sort3">
                             <div class="sort_name"><span class="leftT"></span><div class="name">MENTHOL 멘솔향 & <br>DESSERT 디져트</div><span class="rightT"></span></div>
                             <span class="left"><</span>
                             <div class="touchSlider3">      
@@ -346,7 +354,9 @@
                                 </ul>                      
                             </div>  
                             <span class="right">></span>                   
-                        </div> 
+                        </div> -->
+                        
+                        
                         <script>
                             var bodyWidth=$('body').width();
                             var sortWidth=$('#sort3 img').width();
@@ -355,33 +365,6 @@
                             $('#sort3 img').css({'position':'absolute','left':sortLeft});
                         </script>
 
-                        <div id="touchSlider_paging3" class="btn_area3" style="text-align:center;"></div>
-
-                        <script>
-
-                            $(".touchSlider3").touchSlider({
-                                    initComplete : function (e) {
-                                            $("#touchSlider_paging3").html("");
-                                            var num = 1;
-                                            $(".touchSlider3 ul li").each(function (i, el) {
-                                                    if((i+1) % e._view == 0) {
-                                                            $("#touchSlider_paging3").append('<div class="btn_page">page' + (num++) + '</div>');
-                                                    }
-                                            });
-                                            $("#touchSlider_paging3 .btn_page").bind("click", function (e) {
-                                                    var i = $(this).index();
-                                                    $(".touchSlider3").get(0).go_page(i);
-                                            });
-                                    },
-                                    counter : function (e) {
-                                            $("#touchSlider_paging3 .btn_page").removeClass("on").eq(e.current-1).addClass("on");
-                                    }
-                            });
-
-                        </script>                     
-
-                        </article> 
-                    
                         <script>
                             var bodyWidth=$('body').width();
                             var sortNameWidth=$('.sort_name').width();
@@ -392,24 +375,20 @@
                         
                         
                         <script>
-                        var swiper = new Swiper('.swiper-container', {
-                            pagination: '.swiper-pagination',
-                            paginationClickable: '.swiper-pagination',
-                            nextButton: '.swiper-button-next',
-                            prevButton: '.swiper-button-prev',
-                            loop: true
-                        });
 
-                        $('.swiper-container').each(function(){
-                            new Swiper($(this), {
-                                pagination: $(this).find('.swiper-pagination'),
-                                paginationClickable: $(this).find('.swiper-pagination'),
-                                nextButton: $(this).find('.swiper-button-next'),
-                                prevButton: $(this).find('.swiper-button-prev'),
-                                loop: true
+                            $('.swiper-container').each(function(){
+                                new Swiper($(this), {
+                                    pagination: $(this).find('.swiper-pagination'),
+                                    paginationClickable: $(this).find('.swiper-pagination'),
+                                    nextButton: $(this).find('.swiper-button-next'),
+                                    prevButton: $(this).find('.swiper-button-prev'),
+                                    loop: true
+                                });
                             });
-                        });
                         </script>
+                            
+                        
+                    </article>
                 </section>
             </div> <!--#content-->
     
