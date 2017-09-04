@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/index_mobile_style.css">
         <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./dist/css/swiper.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -21,6 +22,7 @@
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="./js/jquery.touchSlider.js"></script>
+        <script src="./dist/js/swiper.min.js"></script>
         <script src="//cdn.jsdelivr.net/jquery.event.drag/2.2/jquery.event.drag.min.js"></script>
         <script type="text/javascript" src="./js/jquery.litebox.js"></script>
         <script>
@@ -33,6 +35,32 @@
             .ui-collapsible-heading-toggle {left:15px;}
             .ui-collapsible-content {margin-left:30px;}
             .ui-btn {right:15px;}
+            
+            
+            .swiper-container {
+                width: 300px;
+                height: 300px;
+            }
+            
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
         </style>
         <script>
             function fnMove(seq){
@@ -177,42 +205,29 @@
                     <article id="sort_product">
                         <div id="sort1">
                             <div class="sort_name"><span class="leftT"></span><div class="name">TOBACCO 연초향</div><span class="rightT"></span></div>
-                            <span class="left"><</span>
-                            <div class="touchSlider">      
-                                <ul style="float:left;display:block;">
-                                  <li class="litebox-trigger" data-template="#ms-blend">
-                                        <a href="#"><img src="../img/95/tobacco/ms-blend.png" alt="ms-blend"></a>                   
-                                        <script type="text/template" id="ms-blend">
-                                            <img class="product" src='./img/product/tobacco/ms-blend.jpg' alt='ms-blend'>                                            
-                                        </script>
-                                  </li>
-                                  <li class="litebox-trigger" data-template="#ms-plus">
-                                        <a href="#"><img src="../img/95/tobacco/ms-plus.png" alt="ms-plus"></a>                               
-                                        <script type="text/template" id="ms-plus">
-                                            <img class="product" src='./img/product/tobacco/ms-plus.jpg' alt='ms-plus'>                                        								
-                                        </script>                                      
-                                  </li>
-                                  <li class="litebox-trigger" data-template="#kor-mini">
-                                        <a href="#"><img src="../img/95/tobacco/kor-mini.png" alt="kor-mini"></a>                                   
-                                        <script type="text/template" id="kor-mini">
-                                            <img class="product" src='./img/product/tobacco/kor-mini.jpg' alt='kor-mini'>  	
-                                        </script>     
-                                  </li>
-                                  <li class="litebox-trigger" data-template="#usamix">
-                                        <a href="#"><img src="../img/95/tobacco/usamix.png" alt="usamix"></a>                            
-                                        <script type="text/template" id="usamix">
-                                            <img class="product" src='./img/product/tobacco/usamix.jpg' alt='usamix'>		
-                                        </script>       
-                                  </li>
-                                  <li class="litebox-trigger" data-template="#desert">
-                                        <a href="#"><img src="../img/95/tobacco/desert.png" alt="desert"></a>                                     
-                                        <script type="text/template" id="desert">
-                                            <img class="product" src='./img/product/tobacco/desert.jpg' alt='desert'>	
-                                        </script>
-                                  </li>
-                                </ul>                      
-                            </div>  
-                            <span class="right">></span>                   
+                            <div class="swiper-container">      
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/tobacco/ms-blend.png" alt="ms-blend">        
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/tobacco/ms-plus.png" alt="ms-plus">
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/tobacco/kor-mini.png" alt="kor-mini">  
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/tobacco/usamix.png" alt="usamix">
+                                  </div>
+                                  <div class="swiper-slide">
+                                        <img src="../img/95/tobacco/desert.png" alt="desert">
+                                  </div>
+                                </div>         
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>     
                         </div> 
                         <script>
                             var bodyWidth=$('body').width();
@@ -220,32 +235,8 @@
                             var sortLeft=bodyWidth/2-sortWidth/2;
                             
                             $('#sort1 img').css({'position':'absolute','left':sortLeft});
-                        </script>
-
-                        <div id="touchSlider_paging" class="btn_area" style="text-align:center;"></div>
-
-                        <script>
-
-                            $(".touchSlider").touchSlider({
-                                    initComplete : function (e) {
-                                            $("#touchSlider_paging").html("");
-                                            var num = 1;
-                                            $(".touchSlider ul li").each(function (i, el) {
-                                                    if((i+1) % e._view == 0) {
-                                                            $("#touchSlider_paging").append('<div class="btn_page">page' + (num++) + '</div>');
-                                                    }
-                                            });
-                                            $("#touchSlider_paging .btn_page").bind("click", function (e) {
-                                                    var i = $(this).index();
-                                                    $(".touchSlider").get(0).go_page(i);
-                                            });
-                                    },
-                                    counter : function (e) {
-                                            $("#touchSlider_paging .btn_page").removeClass("on").eq(e.current-1).addClass("on");
-                                    }
-                            });
-
-                        </script> 
+                        </script>                        
+                        
                         <div id="sort2">
                             <div class="sort_name"><span class="leftT"></span><div class="name">FRUIT 과일향</div><span class="rightT"></span></div>
                             <span class="left"><</span>
@@ -397,6 +388,27 @@
                             var sortNameLeft=bodyWidth/2-sortNameWidth/2;
                             
                             $('.sort_name').css({'position':'absolute','left':sortNameLeft});
+                        </script>
+                        
+                        
+                        <script>
+                        var swiper = new Swiper('.swiper-container', {
+                            pagination: '.swiper-pagination',
+                            paginationClickable: '.swiper-pagination',
+                            nextButton: '.swiper-button-next',
+                            prevButton: '.swiper-button-prev',
+                            loop: true
+                        });
+
+                        $('.swiper-container').each(function(){
+                            new Swiper($(this), {
+                                pagination: $(this).find('.swiper-pagination'),
+                                paginationClickable: $(this).find('.swiper-pagination'),
+                                nextButton: $(this).find('.swiper-button-next'),
+                                prevButton: $(this).find('.swiper-button-prev'),
+                                loop: true
+                            });
+                        });
                         </script>
                 </section>
             </div> <!--#content-->
