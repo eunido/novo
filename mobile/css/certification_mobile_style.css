@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+#content {background:#a1dae8;height:1200px;}
+
+
+
+.certi_img ul {
+    width:300px; height:1650px; margin:0 auto; margin-top:80px;
+}
+.certi_img ul li {
+    width:120px; height:168px; border:1px solid #eee; box-sizing:border-box;
+    float:left; margin:0 10px 70px 20px; position:relative;
+}
+.certi_img ul li:nth-child(1) {
+    background:url('../../img/certi/certi_0.jpg') no-repeat; background-size:cover; 
+}
+.certi_img ul li:nth-child(2) {
+    background:url('../../img/certi/certi_1.jpg') no-repeat; background-size:cover; margin-right:0;
+}
+.certi_img ul li:nth-child(3) {
+    background:url('../../img/certi/certi_2.jpg') no-repeat; background-size:cover;
+}
+.certi_img ul li:nth-child(4) {
+    background:url('../../img/certi/certi_3.jpg') no-repeat; background-size:cover; margin-right:0;
+}
+.certi_img ul li:nth-child(5) {
+    background:url('../../img/certi/certi_4.jpg') no-repeat; background-size:cover; 
+}
+.certi_img ul li:nth-child(6) {
+    background:url('../../img/certi/certi_5.jpg') no-repeat; background-size:cover; margin-right:0;
+}
+.certi_img ul li:nth-child(7) {
+    background:url('../../img/certi/certi_6.jpg') no-repeat; background-size:cover; 
+}
+.certi_img ul li:nth-child(8) {
+    background:url('../../img/certi/certi_7.jpg') no-repeat; background-size:cover; margin-right:0;
+}
+
+.certi_img ul li .certi_name {
+    width:120px; height:20px; background:#464646; position:absolute; bottom:-20px; color:#fff; z-index:10; font-size:10px; text-align:center; line-height:20px; box-sizing:border-box;
+}
+
+.certi_img ul li .closer {
+    width:30px; height:30px; background:url('../../img/certi/closer2.png') no-repeat; position:absolute; bottom:0; right:-2px; box-sizing:border-box;
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#content {display:block;background:#a1dae8;width:100%;height:2100px;}
+
+.certi_img ul {
+    width:1200px; height:1650px; margin:0 auto; margin-top:130px;
+}
+.certi_img ul li {
+    width:350px; height:490px; border:1px solid #eee; box-sizing:border-box;
+    float:left; margin:0 25px 70px 25px; position:relative;
+}
+.certi_img ul li:nth-child(1) {
+    background:url('./../img/certi/certi_0.jpg') no-repeat; background-size:cover; 
+}
+.certi_img ul li:nth-child(2) {
+    background:url('./../img/certi/certi_1.jpg') no-repeat; background-size:cover; 
+}
+.certi_img ul li:nth-child(3) {
+    background:url('./../img/certi/certi_2.jpg') no-repeat; background-size:cover; margin-right:0;
+}
+.certi_img ul li:nth-child(4) {
+    background:url('./../img/certi/certi_3.jpg') no-repeat; background-size:cover; 
+}
+.certi_img ul li:nth-child(5) {
+    background:url('./../img/certi/certi_4.jpg') no-repeat; background-size:cover; 
+}
+.certi_img ul li:nth-child(6) {
+    background:url('./../img/certi/certi_5.jpg') no-repeat; background-size:cover; margin-right:0;
+}
+.certi_img ul li:nth-child(7) {
+    background:url('./../img/certi/certi_6.jpg') no-repeat; background-size:cover; 
+}
+.certi_img ul li:nth-child(8) {
+    background:url('./../img/certi/certi_7.jpg') no-repeat; background-size:cover; 
+}
+
+.certi_img ul li .certi_name {
+    width:348px; height:40px; background:#464646; position:absolute; bottom:-40px; color:#fff; z-index:10; text-align:center; line-height:40px; box-sizing:border-box;
+}
+
+.certi_img ul li .closer {
+    width:60px; height:60px; background:url('./../img/certi/closer.png') no-repeat; position:absolute; bottom:0; right:0; box-sizing:border-box;
+}
+
+@media screen and (max-width:1920px) {
+    
+}
+@media screen and (max-width:1680px) {
+    
+}
+@media screen and (max-width:1600px) {
+    
+}
+@media screen and (max-width:1536px) {
+    
+}
+@media screen and (max-width:1440px) {
+    
+}
+@media screen and (max-width:1366px) {
+    
+}
+@media screen and (max-width:1280px) {
+    
+}
+
+/*mobile width*/
+@media screen and (max-width:1080px) {
+    
+}
+@media screen and (max-width:720px) {
+    
+}
+@media screen and (max-width:640px) {
+    
+}
+@media screen and (max-width:480px) {
+    
+}
+@media screen and (max-width:414px) {
+    
+}
+@media screen and (max-width:412px) {
+    
+}
+@media screen and (max-width:375px) {
+    
+}
+@media screen and (max-width:360px) {
+    
+}
+@media screen and (max-width:320px) {
+    
+}

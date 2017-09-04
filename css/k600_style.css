@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.img_wrap {width:100%;height:11491px;background:url('../img/k600_bg.jpg')}
+.k600_wrap {width:880px;height:11491px;text-align:center;margin:0 auto;}
+.k600_wrap img {margin:0 auto; width:880px;float:left;}
+
+@media screen and (max-width:1920px) {
+    
+}
+@media screen and (max-width:1680px) {
+    
+}
+@media screen and (max-width:1600px) {
+    
+}
+@media screen and (max-width:1536px) {
+    
+}
+@media screen and (max-width:1440px) {
+    
+}
+@media screen and (max-width:1366px) {
+    
+}
+@media screen and (max-width:1280px) {
+    
+}
+
+/*mobile width*/
+@media screen and (max-width:1080px) {
+    
+}
+@media screen and (max-width:720px) {
+    
+}
+@media screen and (max-width:640px) {
+    
+}
+@media screen and (max-width:480px) {
+    
+}
+@media screen and (max-width:414px) {
+    
+}
+@media screen and (max-width:412px) {
+    
+}
+@media screen and (max-width:375px) {
+    
+}
+@media screen and (max-width:360px) {
+    
+}
+@media screen and (max-width:320px) {
+    
+}
