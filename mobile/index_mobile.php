@@ -213,7 +213,7 @@
                             <div class="swiper-container">      
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
-                                        <img src="../img/95/tobacco/ms-blend.png" alt="ms-blend">        
+                                      <a href="#"><img src="../img/95/tobacco/ms-blend.png" alt="ms-blend"></a>
                                   </div>
                                   <div class="swiper-slide">
                                         <img src="../img/95/tobacco/ms-plus.png" alt="ms-plus">
