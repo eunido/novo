@@ -16,7 +16,7 @@ header {
 
 
 /* title */
-.page_name {position:relative;top:50px;margin:0 auto;padding:20px 0 0 20px;font-size:25px;}
+.page_name {position:relative;top:70px;margin:0 auto;text-align:center;font-size:25px;}
 .name_line {width:20px;height:2px;background:#000;position:relative;top:120px;}
 .name_txt {font-size:25px;margin:0 auto;text-decoration:overline;}
 

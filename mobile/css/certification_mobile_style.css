@@ -12,28 +12,28 @@
     float:left; margin:0 10px 70px 20px; position:relative;
 }
 .certi_img ul li:nth-child(1) {
-    background:url('../../img/certi/certi_0.jpg') no-repeat; background-size:cover; 
+    background:url('../img/certi/certi_0.jpg') no-repeat; background-size:cover; 
 }
 .certi_img ul li:nth-child(2) {
-    background:url('../../img/certi/certi_1.jpg') no-repeat; background-size:cover; margin-right:0;
+    background:url('../img/certi/certi_1.jpg') no-repeat; background-size:cover; margin-right:0;
 }
 .certi_img ul li:nth-child(3) {
-    background:url('../../img/certi/certi_2.jpg') no-repeat; background-size:cover;
+    background:url('../img/certi/certi_2.jpg') no-repeat; background-size:cover;
 }
 .certi_img ul li:nth-child(4) {
-    background:url('../../img/certi/certi_3.jpg') no-repeat; background-size:cover; margin-right:0;
+    background:url('../img/certi/certi_3.jpg') no-repeat; background-size:cover; margin-right:0;
 }
 .certi_img ul li:nth-child(5) {
-    background:url('../../img/certi/certi_4.jpg') no-repeat; background-size:cover; 
+    background:url('../img/certi/certi_4.jpg') no-repeat; background-size:cover; 
 }
 .certi_img ul li:nth-child(6) {
-    background:url('../../img/certi/certi_5.jpg') no-repeat; background-size:cover; margin-right:0;
+    background:url('../img/certi/certi_5.jpg') no-repeat; background-size:cover; margin-right:0;
 }
 .certi_img ul li:nth-child(7) {
-    background:url('../../img/certi/certi_6.jpg') no-repeat; background-size:cover; 
+    background:url('../img/certi/certi_6.jpg') no-repeat; background-size:cover; 
 }
 .certi_img ul li:nth-child(8) {
-    background:url('../../img/certi/certi_7.jpg') no-repeat; background-size:cover; margin-right:0;
+    background:url('../img/certi/certi_7.jpg') no-repeat; background-size:cover; margin-right:0;
 }
 
 .certi_img ul li .certi_name {
@@ -41,5 +41,5 @@
 }
 
 .certi_img ul li .closer {
-    width:30px; height:30px; background:url('../../img/certi/closer2.png') no-repeat; position:absolute; bottom:0; right:-2px; box-sizing:border-box;
+    width:30px; height:30px; background:url('../img/certi/closer2.png') no-repeat; position:absolute; bottom:0; right:-2px; box-sizing:border-box;
 }

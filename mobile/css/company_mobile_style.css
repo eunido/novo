@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-#content {background:#a1dae8;height:520px;}
+#content {background:#a1dae8;height:600px;}
 
-#info {position:relative;top:60px;padding:20px;}
+#info {position:relative;top:80px;padding:20px;text-align:center;margin:0 auto;}
 .info_txt {font-size:15px;line-height:25px;color:#23527c;}
 
-.graph {width:260px;margin:0 auto;position:relative;top:30px;}
+.graph {width:260px;margin:0 auto;position:relative;top:40px;}
 .graph li .circle_line {width:200px;height:2px;background:#2a356b;
                         position:relative;top:40px;left:20px;box-sizing:border-box;}
 .graph li.circle_graph {float:left;margin-right:10px;position:relative;}
@@ -15,4 +15,4 @@
                                   padding:18px 0;}
 
 .graph_logo {position:relative;}
-.graph_logo img.logo2 {display:block;margin:0 auto;position:relative;top:50px;text-align:center;width:150px;height:35px;}
+.graph_logo img.logo2 {display:block;margin:0 auto;position:relative;top:60px;text-align:center;width:90px;height:21px;}
