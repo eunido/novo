@@ -1,15 +1,15 @@
 @charset "utf-8";
 
-#content {background:#a1dae8;height:1200px;}
+#content {background:#a1dae8;height:1050px;}
 
 
 
 .certi_img ul {
-    width:300px; height:1650px; margin:0 auto; margin-top:80px;
+    width:300px; height:1650px; margin:0 auto; position:relative; top:100px;
 }
 .certi_img ul li {
     width:120px; height:168px; border:1px solid #eee; box-sizing:border-box;
-    float:left; margin:0 10px 70px 20px; position:relative;
+    float:left; margin:0 15px 50px 15px; position:relative;
 }
 .certi_img ul li:nth-child(1) {
     background:url('../img/certi/certi_0.jpg') no-repeat; background-size:cover; 

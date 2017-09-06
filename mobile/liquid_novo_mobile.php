@@ -1,6 +1,5 @@
-<?php
-?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
 	<title>NOVO</title>
@@ -12,7 +11,7 @@
         <!-- ios홈화면추가시 상단 주소창 제거 -->
         <meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/index_mobile_style.css">
+        <link rel="stylesheet" href="./css/liquid_novo_mobile_style.css">
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./dist/css/swiper.min.css">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -69,15 +68,10 @@
             
 
         </style>
-        <script>
-            function fnMove(seq){
-                var offset = $("#sort"+seq).offset();
-                $('html, body').animate({scrollTop:offset.top}, 400);
-            }        
-        </script>
     </head>
     <body>
         <div id="wrap">
+            
             <header>
                 <div id="header">
                     <h2><img src="./img/menu.png" alt="menu"></h2>
@@ -101,21 +95,21 @@
                     <div data-role="collapsible" data-inset="false">
                         <h3>제품소개</h3>
                         <ul data-role="listview">
-                            <li><a href="./cato.php">CATOMIZER</a></li>
-                            <li><a href="./k600.php">K600</a></li>
+                            <li><a href=".#">CATOMIZER</a></li>
+                            <li><a href="#">K600</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                     <div data-role="collapsible" data-inset="false">
                         <h3>고객지원</h3>
                         <ul data-role="listview">
-                            <li><a href="./faq.php">자주묻는질문</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                     <div data-role="collapsible" data-inset="false">
                         <h3>연락처</h3>
                         <ul data-role="listview">
-                            <li><a href="./question_kr.php">한국/문의</a></li>
-                            <li><a href="./question_ch.php">중국/문의</a></li>
+                            <li><a href="#">한국/문의</a></li>
+                            <li><a href="#">중국/문의</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                 </div>
@@ -137,79 +131,12 @@
                 </script>
             </header>
             
-            <div id="content">
-                <section>
-                    <article>
-                        <div id="main">
-                            <div id="main_img">
-                                <div class="main_bg">
-                                    <img src="./img/main_bg.png">
-                                </div>
-                                <div class="sort_gallery">
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                                <script>
-                                    $(document).ready(function() {
-                                       var $galleryLi=$('.sort_gallery li');
-                                       var $galleryLiSize=$galleryLi.size();
-                                       var $arrBg=[];
-
-                                       for(var i=0;i<$galleryLiSize;i++) {
-                                           console.log(i);
-                                           $arrBg.push('url(./img/img_'+(i)+'.png) no-repeat 100%');
-                                           console.log($arrBg[i]);
-                                           $galleryLi.eq(i).css({'background':$arrBg[i],'background-size':'cover'});
-                                       }
-                                       var num=-1;
-                                       function autoFade() {
-                                           num++;
-                                           $galleryLi.eq(num).fadeIn().siblings().fadeOut();
-
-                                           if(num==$galleryLiSize-1) num=-1;
-                                       }
-                                       setInterval(autoFade,2000);
-                                    });
-                                </script>
-                            </div>           
-                            <div id="circle">
-                            </div>
-
-                            <script>
-                                var bodyWidth=$('body').width();
-                                var circleWidth=$('#circle').width();
-                                var circleLeft=bodyWidth/2-circleWidth/2;
-
-                                $('#circle').css({'position':'absolute','left':circleLeft});
-                            </script>
-
-                            <div class="main_txt">
-                                <img src="./img/main_txt.png">
-                            </div>
-                            <div class="wrap_icon">
-                                <div id="sort_icon">
-                                    <ul id="sort_img">
-                                        <li onclick="fnMove('1')"><a href="#"><img src="../img/tobacco.png" alt="tobacco"></a></li>
-                                        <li onclick="fnMove('2')"><a href="#"><img src="../img/fruit.png" alt="fruit"></a></li>
-                                        <li onclick="fnMove('3')"><a href="#"><img src="../img/menthol.png" alt="menthol"></a></li>
-                                        <li onclick="fnMove('3')"><a href="#"><img src="../img/dessert.png" alt="dessert"></a></li>
-                                    </ul>
-                                    <ul id="sort_txt">
-                                        <li>TOBACCO</li>
-                                        <li>FRUIT</li>
-                                        <li>MENTHOL</li>
-                                        <li>DESERT</li>
-                                    </ul>
-                                </div>
-                            </div>    
-                        </div>
-                    </article>
-                    <article id="sort_product">
+            <div id="content">                    
+                <div class="page_name">
+                    <div class="name_txt"><span style="font-weight:500;">노보 리퀴드&nbsp;</span>NOVO LIQUID</div>
+                </div>                
+                                   
+                    <div id="sort_product">
                         <div id="sort1">
                             <div class="sort_name"><span class="leftT"></span><div class="name">TOBACCO 연초향</div><span class="rightT"></span></div>
                             <div class="swiper-container">      
@@ -395,10 +322,11 @@
                         </script>
                             
                         
-                    </article>
-                </section>
-            </div> <!--#content-->
-    
+                    </div>
+                
+                
+            </div><!--#content-->
+            
             <footer class="footer">
                 <div class="footer_company">
                     상호명 : 씨엔엘&nbsp;&nbsp;&nbsp;&nbsp;대표자 : 이혜연&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 : 171-40-00216
@@ -414,24 +342,11 @@
                     안전한 곳에 보관하세요. 7. 본제품은 중독성이 있는 제품입니다. 사용상 주의 하십시요. 8. 지나친 흡연은 당신의 건강을 
                     해칠 수 있습니다. 일단 흡연을 하게 되면 끊기가 매우 어려우므로 주의하세요. 금연상담전화 1544-9030
                 </div>
-            </footer>        
+            </footer>     
+           
         </div>
-            
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-    
+                
+        
+        
     </body>
 </html>
-    

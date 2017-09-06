@@ -5,7 +5,7 @@
             $mobileKeyWords = array ("iPhone", "iPod", "BlackBerry", "Android", "Windows CE", "LG", "MOT", "SAMSUNG", "SonyEricsson", "Mobile", "Symbian", "Opera Mobi", "Opera Mini", "IEmobile");
             for($i = 0 ; $i < count($mobileKeyWords) ; $i++) {
                 if(strpos($_SERVER["HTTP_USER_AGENT"],$mobileKeyWords[$i]) == true) {
-                    header("Location: ./mobile/index_mobile.php");
+                    header("Location: ./mobile/index.php");
                     exit;
                 }
             }
@@ -131,7 +131,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                           
                                     <script type="text/template" id="ms-blend">
-                                        <img src='./img/product/tobacco/ms-blend.jpg' alt='ms-blend'class="product">                                            
+                                        <img src='./img/product/tobacco/ms-blend.jpg' alt='ms-blend' class="product">                                            
                                     </script>
                                 </div>         
                             </div>
@@ -143,7 +143,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                          
                                     <script type="text/template" id="ms-plus">
-                                        <img src='./img/product/tobacco/ms-plus.jpg' alt='ms-plus'class="product">                                        								
+                                        <img src='./img/product/tobacco/ms-plus.jpg' alt='ms-plus' class="product">                                        								
                                     </script>                                      
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                           
                                     <script type="text/template" id="kor-mini">
-                                        <img src='./img/product/tobacco/kor-mini.jpg' alt='kor-mini'class="product">  	
+                                        <img src='./img/product/tobacco/kor-mini.jpg' alt='kor-mini' class="product">  	
                                     </script>     
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                         
                                     <script type="text/template" id="usamix">
-                                        <img src='./img/product/tobacco/usamix.jpg' alt='usamix'class="product">		
+                                        <img src='./img/product/tobacco/usamix.jpg' alt='usamix' class="product">		
                                     </script>       
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                            
                                     <script type="text/template" id="desert">
-                                        <img src='./img/product/tobacco/desert.jpg' alt='desert'class="product">	
+                                        <img src='./img/product/tobacco/desert.jpg' alt='desert' class="product">	
                                     </script>
                                 </div>
                             </div>
@@ -194,7 +194,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                                                      
                                     <script type="text/template" id="greenpunch">
-                                        <img src='./img/product/fruit/greenpunch.jpg' alt='greenpunch'class="product">			
+                                        <img src='./img/product/fruit/greenpunch.jpg' alt='greenpunch' class="product">			
                                     </script>        
                                 </div>
                             </div>
@@ -205,7 +205,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                               
                                     <script type="text/template" id="bluepunch">
-                                        <img src='./img/product/fruit/bluepunch.jpg' alt='bluepunch'class="product">				
+                                        <img src='./img/product/fruit/bluepunch.jpg' alt='bluepunch' class="product">				
                                     </script>
                                 </div>
                             </div>
@@ -216,7 +216,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                 
                                     <script type="text/template" id="coollemon">
-                                        <img src='./img/product/fruit/coollemon.jpg' alt='coollemon'class="product">							
+                                        <img src='./img/product/fruit/coollemon.jpg' alt='coollemon' class="product">							
                                     </script>   
                                 </div>
                             </div>
@@ -227,7 +227,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                    
                                     <script type="text/template" id="yellowpunch">
-                                        <img src='./img/product/fruit/yellowpunch.jpg' alt='yellowpunch'class="product">				
+                                        <img src='./img/product/fruit/yellowpunch.jpg' alt='yellowpunch' class="product">				
                                     </script>    
                                 </div>
                             </div>
@@ -238,7 +238,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                        
                                     <script type="text/template" id="whitepunch">
-                                        <img src='./img/product/fruit/whitepunch.jpg' alt='whitepunch'class="product">					
+                                        <img src='./img/product/fruit/whitepunch.jpg' alt='whitepunch' class="product">					
                                     </script>   
                                 </div>
                             </div>
@@ -255,7 +255,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                       
                                     <script type="text/template" id="tabacmenthol">
-                                        <img src='./img/product/menthol_dessert/tabacmenthol.jpg' alt='tabacmenthol'class="product">		
+                                        <img src='./img/product/menthol_dessert/tabacmenthol.jpg' alt='tabacmenthol' class="product">		
                                     </script>     
                                 </div>
                             </div>
@@ -266,7 +266,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                      
                                     <script type="text/template" id="blackmenthol">
-                                        <img src='./img/product/menthol_dessert/blackmenthol.jpg' alt='blackmenthol'class="product">							
+                                        <img src='./img/product/menthol_dessert/blackmenthol.jpg' alt='blackmenthol' class="product">							
                                     </script>       
                                 </div>
                             </div>
@@ -277,7 +277,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                          
                                     <script type="text/template" id="menthol">
-                                        <img src='./img/product/menthol_dessert/menthol.jpg' alt='menthol'class="product">							
+                                        <img src='./img/product/menthol_dessert/menthol.jpg' alt='menthol' class="product">							
                                     </script>  
                                 </div>
                             </div>
@@ -288,7 +288,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                          
                                     <script type="text/template" id="americano">
-                                        <img src='./img/product/menthol_dessert/americano.jpg' alt='americano'class="product">			
+                                        <img src='./img/product/menthol_dessert/americano.jpg' alt='americano' class="product">			
                                     </script>  
                                 </div>
                             </div>
@@ -299,7 +299,7 @@
                                 <div class="middle">
                                     <div class="click_text">Click</div>                                                                    
                                     <script type="text/template" id="hazzlenut">
-                                        <img src='./img/product/menthol_dessert/hazzlenut.jpg' alt='hazzlenut'class="product">			
+                                        <img src='./img/product/menthol_dessert/hazzlenut.jpg' alt='hazzlenut' class="product">			
                                     </script> 
                                 </div>
                             </div>

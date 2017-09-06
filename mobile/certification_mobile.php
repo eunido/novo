@@ -45,8 +45,8 @@
                     <div data-role="collapsible" data-inset="false">
                         <h3>액상소개</h3>
                         <ul data-role="listview">
-                            <li><a href="./liquid_novo.php">NOVO</a></li>
-                            <li><a href="./liquid_medusa.php">MEDUSA</a></li>
+                            <li><a href="./liquid_novo_mobile.php" data-ajax="false">NOVO</a></li>
+                            <li><a href="./liquid_medusa_mobile.php" data-ajax="false">MEDUSA</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                     <div data-role="collapsible" data-inset="false">
