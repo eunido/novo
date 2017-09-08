@@ -26,7 +26,7 @@
                 });
         </script>
         <style>
-            
+            * {text-shadow:none;}            
             
             .navi {display:none;position:relative;top:0;left:10px;}
             .ui-collapsible-heading-toggle {left:15px;}
@@ -134,8 +134,20 @@
             <div id="content">                    
                 <div class="page_name">
                     <div class="name_txt"><span style="font-weight:500;">노보 리퀴드&nbsp;</span>NOVO LIQUID</div>
-                </div>                
-                                   
+                </div>
+
+                <div data-role="tabs">
+                          
+                    <div class="navbar" data-role="navbar" style="position:relative;left:13px;top:100px;z-index:10;">  
+                        <ul>
+                            <li><a href="#tab01" data-ajax="false" class="ui-btn-active">노보 0.95%</a></li>
+                            <li><a href="#tab02" data-ajax="false">노보 0.20%</a></li>
+                        </ul>
+                    </div>
+                    
+                        
+                    <div id="tab01">
+                                    
                     <div id="sort_product">
                         <div id="sort1">
                             <div class="sort_name"><span class="leftT"></span><div class="name">TOBACCO 연초향</div><span class="rightT"></span></div>
@@ -273,6 +285,151 @@
                         </div>
                         
                         
+                    </div>
+                    </div>
+                    
+                       
+                    <div id="tab02">
+                                    
+                    <div id="sort_product">
+                        <div id="sort1">
+                            <div class="sort_name"><span class="leftT"></span><div class="name">TOBACCO 연초향</div><span class="rightT"></span></div>
+                            <div class="swiper-container">      
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide litebox-trigger" data-template="#ms-blend">
+                                        <a href="#"><img src="../img/20/tobacco/ms-blend.png" alt="ms-blend"></a>                       
+                                        <script type="text/template" id="ms-blend">
+                                            <img src='../img/product/tobacco/ms-blend.jpg' alt='ms-blend' class="product">                                            
+                                        </script>                                      
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#ms-plus">
+                                        <a href="#"><img src="../img/20/tobacco/ms-plus.png" alt="ms-plus"></a>                                                                           
+                                        <script type="text/template" id="ms-plus">
+                                            <img src='../img/product/tobacco/ms-plus.jpg' alt='ms-plus' class="product">                                        								
+                                        </script>                                    
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#kor-mini">
+                                        <a href="#"><img src="../img/20/tobacco/kor-mini.png" alt="kor-mini"></a>                                     
+                                        <script type="text/template" id="kor-mini">
+                                            <img src='../img/product/tobacco/kor-mini.jpg' alt='kor-mini' class="product">  	
+                                        </script>     
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#usamix">
+                                        <a href="#"><img src="../img/20/tobacco/usamix.png" alt="usamix"></a>                                       
+                                        <script type="text/template" id="usamix">
+                                            <img src='../img/product/tobacco/usamix.jpg' alt='usamix' class="product">		
+                                        </script>       
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#desert">
+                                        <a href="#"><img src="../img/20/tobacco/desert.png" alt="desert"></a>                                            
+                                        <script type="text/template" id="desert">
+                                            <img src='../img/product/tobacco/desert.jpg' alt='desert' class="product">	
+                                        </script>
+                                    </div>
+                                </div>         
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination" style="bottom:20px;"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>     
+                            </div>    
+                        </div>
+                            
+                            
+                        
+                        
+                        <div id="sort2">
+                            <div class="sort_name"><span class="leftT"></span><div class="name">FRUIT 과일향</div><span class="rightT"></span></div>
+                            <div class="swiper-container">      
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide litebox-trigger" data-template="#whitepunch">
+                                        <a href="#"><img src="../img/20/fruit/whitepunch.png" alt="whitepunch"></a>                                                       
+                                        <script type="text/template" id="whitepunch">
+                                            <img src='../img/product/fruit/whitepunch.jpg' alt='whitepunch' class="product">					
+                                        </script>      
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#greenpunch">
+                                        <a href="#"><img src="../img/20/fruit/greenpunch.png" alt="greenpunch"></a>                                                                               
+                                        <script type="text/template" id="greenpunch">
+                                            <img src='../img/product/fruit/greenpunch.jpg' alt='greenpunch' class="product">			
+                                        </script>        
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#bluepunch">
+                                        <a href="#"><img src="../img/20/fruit/bluepunch.png" alt="bluepunch"></a>                                              
+                                        <script type="text/template" id="bluepunch">
+                                            <img src='../img/product/fruit/bluepunch.jpg' alt='bluepunch' class="product">				
+                                        </script> 
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#coollemon">
+                                        <a href="#"><img src="../img/20/fruit/coollemon.png" alt="coollemon"></a>                                                
+                                        <script type="text/template" id="coollemon">
+                                            <img src='../img/product/fruit/coollemon.jpg' alt='coollemon' class="product">							
+                                        </script>   
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#yellowpunch">
+                                        <a href="#"><img src="../img/20/fruit/yellowpunch.png" alt="yellowpunch"></a>                                                  
+                                        <script type="text/template" id="yellowpunch">
+                                            <img src='../img/product/fruit/yellowpunch.jpg' alt='yellowpunch' class="product">				
+                                        </script>    
+                                    </div>
+                                  </div>         
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination" style="bottom:20px;"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>     
+                            </div>    
+                            
+                        </div>
+                        
+                        
+                        <div id="sort3">
+                            <div class="sort_name"><span class="leftT"></span><div class="name">MENTHOL 멘솔향 & <br>DESSERT 디져트</div><span class="rightT"></span></div>
+                            <div class="swiper-container">      
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide litebox-trigger" data-template="#blackmenthol">
+                                        <a href="#"><img src="../img/20/menthol/blackmenthol.png" alt="blackmenthol"></a>                                                
+                                        <script type="text/template" id="blackmenthol">
+                                            <img src='../img/product/menthol_dessert/blackmenthol.jpg' alt='blackmenthol' class="product">							
+                                        </script>       
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#tabacmenthol">
+                                        <a href="#"><img src="../img/20/menthol/tabacmenthol.png" alt="tabacmenthol"></a>                                                 
+                                        <script type="text/template" id="tabacmenthol">
+                                            <img src='../img/product/menthol_dessert/tabacmenthol.jpg' alt='tabacmenthol' class="product">		
+                                        </script>     
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#menthol">
+                                        <a href="#"><img src="../img/20/menthol/menthol.png" alt="menthol"></a>                                                      
+                                        <script type="text/template" id="menthol">
+                                            <img src='../img/product/menthol_dessert/menthol.jpg' alt='menthol' class="product">							
+                                        </script>  
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#americano">
+                                        <a href="#"><img src="../img/20/dessert/americano.png" alt="americano"></a>                                                        
+                                        <script type="text/template" id="americano">
+                                            <img src='../img/product/menthol_dessert/americano.jpg' alt='americano' class="product">			
+                                        </script>  
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#hazzlenut">
+                                        <a href="#"><img src="../img/20/dessert/hazzlenut.png" alt="hazzlenut"></a>                                                                  
+                                        <script type="text/template" id="hazzlenut">
+                                            <img src='../img/product/menthol_dessert/hazzlenut.jpg' alt='hazzlenut' class="product">			
+                                        </script> 
+                                    </div>
+                                </div>         
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination" style="bottom:20px;"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>     
+                            </div>    
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    </div>
                         
                         <script>
                             var bodyWidth=$('body').width();
@@ -322,9 +479,8 @@
                         </script>
                             
                         
-                    </div>
                 
-                
+                </div>
             </div><!--#content-->
             
             <footer class="footer">

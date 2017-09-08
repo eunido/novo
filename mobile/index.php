@@ -27,8 +27,8 @@
                 });
         </script>
         <style>
-            
-            
+            * {text-shadow:none;}
+
             .navi {display:none;position:relative;top:0;left:10px;}
             .ui-collapsible-heading-toggle {left:15px;}
             .ui-collapsible-content {margin-left:30px;}

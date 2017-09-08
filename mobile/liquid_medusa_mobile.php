@@ -26,7 +26,7 @@
                 });
         </script>
         <style>
-            
+            * {text-shadow:none;}
             
             .navi {display:none;position:relative;top:0;left:10px;}
             .ui-collapsible-heading-toggle {left:15px;}
@@ -135,6 +135,18 @@
                 <div class="page_name">
                     <div class="name_txt" style="font-size:20px;"><span style="font-weight:500;">메두사 리퀴드&nbsp;</span>MEDUSA LIQUID</div>
                 </div>                
+                
+                <div data-role="tabs">
+                          
+                    <div class="navbar" data-role="navbar" style="position:relative;left:13px;top:100px;z-index:10;">  
+                        <ul>
+                            <li><a href="#tab01" data-ajax="false" class="ui-btn-active">메두사 0.95%</a></li>
+                            <li><a href="#tab02" data-ajax="false">메두사 0.30%</a></li>
+                        </ul>
+                    </div>
+                    
+                        
+                    <div id="tab01">
                                    
                     <div id="sort_product">
                         <div id="sort1">
@@ -180,9 +192,61 @@
                             </div>    
                         </div>
                             
-                             
-                            
+                                                    
+                        </div>
                     </div>
+                    
+                        
+                    <div id="tab02">
+                                   
+                    <div id="sort_product">
+                        <div id="sort1">
+                            <div class="sort_name"><span class="leftT"></span><div class="name">MEDUSA 메두사</div><span class="rightT"></span></div>
+                            <div class="swiper-container">      
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide litebox-trigger" data-template="#britishtobacco">
+                                        <a href="#"><img src="../img/medusa/30/britishtobacco.png" alt="britishtobacco"></a>                       
+                                        <script type="text/template" id="britishtobacco">
+                                            <img src='../img/product/medusa/britishtobacco.jpg' alt='britishtobacco' class="product">                                            
+                                        </script>                                      
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#blood">
+                                        <a href="#"><img src="../img/medusa/30/blood.png" alt="blood"></a>                                                                           
+                                        <script type="text/template" id="blood">
+                                            <img src='../img/product/medusa/blood.jpg' alt='blood' class="product">                                        								
+                                        </script>                                    
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#iceblackhole">
+                                        <a href="#"><img src="../img/medusa/30/iceblackhole.png" alt="iceblackhole"></a>                                     
+                                        <script type="text/template" id="iceblackhole">
+                                            <img src='../img/product/medusa/iceblackhole.jpg' alt='iceblackhole' class="product">  	
+                                        </script>     
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#iceblending">
+                                        <a href="#"><img src="../img/medusa/30/iceblending.png" alt="iceblending"></a>                                       
+                                        <script type="text/template" id="iceblending">
+                                            <img src='../img/product/medusa/iceblending.jpg' alt='iceblending' class="product">		
+                                        </script>       
+                                    </div>
+                                    <div class="swiper-slide litebox-trigger" data-template="#headshot">
+                                        <a href="#"><img src="../img/medusa/30/headshot.png" alt="headshot"></a>                                            
+                                        <script type="text/template" id="headshot">
+                                            <img src='../img/product/medusa/headshot.jpg' alt='headshot' class="product">	
+                                        </script>
+                                    </div>
+                                </div>         
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination" style="bottom:20px;"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>     
+                            </div>    
+                        </div>
+                            
+                                                    
+                        </div>
+                    </div>
+                </div>
                         
                         
                         
@@ -216,9 +280,8 @@
                             });
                         });
                     </script>
-                            
-                        
-                </div>
+                                                 
+                
                 
                 
             </div><!--#content-->

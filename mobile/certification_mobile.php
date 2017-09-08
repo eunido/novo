@@ -20,6 +20,8 @@
         <script type="text/javascript" src="../js/popbox-1.1.js"></script>
         <script src="//cdn.jsdelivr.net/jquery.event.drag/2.2/jquery.event.drag.min.js"></script>
         <style>
+            * {text-shadow:none;}
+            
             .navi {display:none;position:relative;top:0;left:10px;}
             .ui-collapsible-heading-toggle {left:15px;}
             .ui-collapsible-content {margin-left:30px;}

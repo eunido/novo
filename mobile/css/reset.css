@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @font-face{
 		font-family:"NanumBarunGothic";
 		src:url('../font/NanumBarunGothic/NanumBarunGothic.eot');
@@ -15,8 +14,7 @@
 		url('../font/NanumSquare/NanumSquareR.woff')format('woff'); 
 }
 
-
-* {font-family:'NanumGothic', sans-serif;}
+* {font-family:'NanumBarunGothic', 'Dotum', 'Gulim', 'Arial', sans-serif;}
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -71,8 +69,8 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
-	text-decoration:none;
-	color:#000;
+    text-decoration:none;
+    color:#000;
 }
 
 /* change colours to suit your needs */

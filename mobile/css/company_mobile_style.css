@@ -11,7 +11,7 @@
 .graph li.circle_graph {float:left;margin-right:10px;position:relative;}
 .graph li.circle_graph:last-child {margin-right:0;}
 .graph li.circle_graph .circle {width:80px;height:80px;background:#2a356b;border-radius:50%;}
-.graph li.circle_graph .circle p {color:#fff;line-height:20px;font-size:13px;text-align:center;
+.graph li.circle_graph .circle p {color:#fff;line-height:20px;font-size:11px;text-align:center;
                                   padding:18px 0;}
 
 .graph_logo {position:relative;}
