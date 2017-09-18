@@ -54,8 +54,8 @@
                     <div data-role="collapsible" data-inset="false">
                         <h3>제품소개</h3>
                         <ul data-role="listview">
-                            <li><a href="./cato.php">CATOMIZER</a></li>
-                            <li><a href="./k600.php">K600</a></li>
+                            <li><a href="./cato_mobile.php">CATOMIZER</a></li>
+                            <li><a href="./k600_mobile.php">K600</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                     <div data-role="collapsible" data-inset="false">

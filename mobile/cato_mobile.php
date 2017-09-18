@@ -11,13 +11,11 @@
         <!-- ios홈화면추가시 상단 주소창 제거 -->
         <meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/company_mobile_style.css">
+        <link rel="stylesheet" href="./css/cato_mobile_style.css">
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="//cdn.jsdelivr.net/jquery.event.drag/2.2/jquery.event.drag.min.js"></script>
         <style>
             * {text-shadow:none;}
@@ -61,14 +59,14 @@
                     <div data-role="collapsible" data-inset="false">
                         <h3>고객지원</h3>
                         <ul data-role="listview">
-                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="./faq.php">자주묻는질문</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                     <div data-role="collapsible" data-inset="false">
                         <h3>연락처</h3>
                         <ul data-role="listview">
-                            <li><a href="#">한국/문의</a></li>
-                            <li><a href="#">중국/문의</a></li>
+                            <li><a href="./question_kr.php">한국/문의</a></li>
+                            <li><a href="./question_ch.php">중국/문의</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                 </div>
@@ -92,48 +90,11 @@
             
             <div id="content">                    
                 <div class="page_name">
-                    <div class="name_txt"><span style="font-weight:500;">회사 소개&nbsp;</span>About Us</div>
+                    <div class="name_txt"><span style="font-weight:500;">카토마이저&nbsp;</span>Catomizer</div>
                 </div>                
                 
-                <div id="info">
-                    <p class="info_txt">
-                        <span>저희&nbsp;</span><span style="font-size:20px;font-weight:500;">씨엔엘은</span><br>
-                        앞선 품질과 기술력으로<br> 전자담배 시장을 선도하는<br> 액상 전문 회사입니다.<br>
-                        우수한 전문 연구진을<br> 바탕으로 연구개발에 집중하여<br>  고객의 니즈를
-                        충족시킬 수 있는<br> 우수한 품질의 제품의 개발, <br>생산에 최선을 다하겠습니다.<br>
-                        건강한 생명의 미래를 열어갑니다.
-                    </p>
-                    <ul class="graph">
-                        <li>
-                            <div class="circle_line"></div>
-                        </li>
-                        <li class="circle_graph">
-                            <div class="circle">
-                                <p>
-                                    헬스케어<br>제품 개발
-                                </p>
-                            </div>
-                        </li>
-                        <li class="circle_graph">
-                            <div class="circle">                                        
-                                <p>
-                                    금연<br>제품 개발
-                                </p>
-                            </div>
-                        </li>
-                        <li class="circle_graph">
-                            <div class="circle">                                                                       
-                                <p>
-                                    전자담배 액상<br>개발 및 수출
-                                </p>
-                            </div>
-                        </li>
-
-                    </ul><!--graph-->
-                    <div class="graph_logo">
-                        <img class="logo2" src="../img/logo_blue.png" alt="logo2">
-                    </div>                           
-
+                <div class="cato_wrap">
+                    <img src="../img/cato.png" alt="cato">
                 </div>
                 
             </div><!--#content-->
