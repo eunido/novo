@@ -11,8 +11,8 @@
         <!-- ios홈화면추가시 상단 주소창 제거 -->
         <meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/liquid_novo_mobile_style.css">
         <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/liquid_novo_mobile_style.css">
         <link rel="stylesheet" href="./dist/css/swiper.min.css">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -74,6 +74,7 @@
     <body>
         <div id="wrap">
             
+            
             <header>
                 <div id="header">
                     <h2><img src="./img/menu.png" alt="menu"></h2>
@@ -97,21 +98,21 @@
                     <div data-role="collapsible" data-inset="false">
                         <h3>제품소개</h3>
                         <ul data-role="listview">
-                            <li><a href="./cato_mobile.php">CATOMIZER</a></li>
-                            <li><a href="./k600_mobile.php">K600</a></li>
+                            <li><a href="./cato_mobile.php" data-ajax="false">CATOMIZER</a></li>
+                            <li><a href="./k600_mobile.php" data-ajax="false">K600</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                     <div data-role="collapsible" data-inset="false">
                         <h3>고객지원</h3>
                         <ul data-role="listview">
-                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="./faq_mobile.php" data-ajax="false">자주묻는질문</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                     <div data-role="collapsible" data-inset="false">
                         <h3>연락처</h3>
                         <ul data-role="listview">
-                            <li><a href="#">한국/문의</a></li>
-                            <li><a href="#">중국/문의</a></li>
+                            <li><a href="./question_kr_mobile.php" data-ajax="false">한국/문의</a></li>
+                            <li><a href="./question_ch_mobile.php" data-ajax="false">중국/문의</a></li>
                         </ul>
                     </div><!-- /collapsible -->
                 </div>
